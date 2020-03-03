@@ -6,12 +6,12 @@ This repository contains all resources for my model rocketery experiments. The c
 
 Everything is work in progress (currently working on the code and the gimbal).
 
-## CAD
+## 3D models
 
 This folder contains the 3D models for my rocket:
-* The 2 axes thrust vectoring control (TVC) gimbal,
-* The PCB holder,
-* The nose cone.
+* The 2 axes thrust vectoring control (TVC) gimbal (SolidWorks),
+* The PCB holder (OpenSCAD),
+* The nose cone (OpenSCAD).
 
 The gimbal is a 3D-printable, parametric Solidworks model. There are two variables that should be adjusted to fit your needs: the diameter of the rocket motor and the diameter of the rocket body. The geometry adapts to these constraints. It should be 3D-printed with supports enabled.
 
