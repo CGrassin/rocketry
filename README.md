@@ -10,12 +10,15 @@ Everything is work in progress (currently working on the code and the gimbal).
 
 This folder contains the 3D models for my rocket:
 * The 2 axes thrust vectoring control (TVC) gimbal (SolidWorks),
-* The PCB holder (OpenSCAD),
-* The nose cone (OpenSCAD).
+* The gimbal test stand (OpenSCAD parametric design),
+* The PCB holder (OpenSCAD parametric design),
+* The nose cone (OpenSCAD parametric design).
+
+TODO : add render of all models
 
 The gimbal is a 3D-printable, parametric Solidworks model. There are two variables that should be adjusted to fit your needs: the diameter of the rocket motor and the diameter of the rocket body. The geometry adapts to these constraints. It should be 3D-printed with supports enabled.
 
-TODO : add picture
+TODO : add photo
 
 The cone is a work-in-progress parametric openSCAD model.
 

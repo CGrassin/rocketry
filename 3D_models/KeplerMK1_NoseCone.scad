@@ -1,21 +1,23 @@
-//  NOSE CONE LIBRARY, version 1.0
-//  by Garrett Goss, 2015, published 9/16
-//
-//  I dedicate any and all copyright interest in this software to the public domain.
-//  I make this dedication for the benefit of the public at large and to the
-//  detriment of my heirs and successors. I intend this dedication to be an overt
-//  act of relinquishment in perpetuity of all present and future rights to this
-//  software under copyright law. See <http://unlicense.org> for more info.
-//
-//  This library implements each of the nose cones described at
-//  https://en.wikipedia.org/wiki/Nose_cone_design, itself derived largely from
-//  Gary A. Crowell Sr. "The Descriptive Geometry Of Nose Cones" (dedicated by author
-//  to the public domain following publication). Reference these if you're looking
-//  for more depth.
-//
-// 
-// MORE EXPLANATION NEEDED HERE
+/**
+* Nose cones for model rockets.
+*
+* Units: mm
+*
+* CGrassin, 2020, MIT License, based on
+* NOSE CONE LIBRARY, version 1.0
+* by Garrett Goss, 2015, published 9/16, public domain.
+**/
 
+// --- Settings ---
+rocket_diameter = 73;
+c_factor = 0/3;
+cone_length = 100;
+base_length=8;
+
+cylinder(base_length,d=rocket_diameter,$fn=500);
+translate([0, 0,base_length]) cone_haack(C = c_factor, R = rocket_diameter/2, L = cone_length - base_length, s = 200);
+
+// --- Code ---
 module cone_cone(R = 5, L = 10, s = 500){
 // CONICAL NOSE CONE
 //
@@ -356,12 +358,3 @@ union(){
     }
 }
 }
-
-// -------------------------------------------
-
-c = 0/3;
-r = 73/2;
-l = 100;
-ledge=8;
-cylinder(ledge,r,r,$fn=500);
-translate([0, 0,ledge]) cone_haack(C = c, R = r, L = l, s = 500);
